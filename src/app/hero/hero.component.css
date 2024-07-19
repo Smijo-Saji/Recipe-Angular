@@ -1,0 +1,7 @@
+.hero-bg {
+  height: 70vh;
+  background-image: url("https://i.postimg.cc/cCNYMqjm/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg");
+  background-size: cover;
+  font-family: "Playwrite AR", cursive;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap");

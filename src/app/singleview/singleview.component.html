@@ -1,0 +1,57 @@
+<div class="container my-2">
+  <div class="row">
+    <div class="col-lg-6 p-3">
+      <img src="{{ resData.image }}" alt="" class="w-100 rounded shadow" />
+    </div>
+    <div class="col-lg-6 p-3">
+      <h2>{{ resData.name }}</h2>
+      <div class="d-flex gap-3">
+        <p
+          *ngFor="let i of resData.mealType"
+          class="px-2 py-1 bg-success rounded shadow text-white"
+        >
+          {{ i }}
+        </p>
+      </div>
+      <div class="d-flex flex-wrap gap-3">
+        <p class="px-2 py-1 border rounded">
+          Ratings : {{ resData.rating }} ⭐ ({{ resData.reviewCount }})
+        </p>
+        <p class="px-2 py-1 border rounded">{{ resData.difficulty }}</p>
+        <p class="px-2 py-1 border rounded">{{ resData.cuisine }}</p>
+      </div>
+
+      <div class="d-flex flex-wrap gap-3 mb-3">
+        <div class="p-3 d-flex flex-column align-items-center rounded shadow">
+          <i class="fa-solid fa-users"></i>
+          <p class="m-0">Servings</p>
+          <p class="m-0">{{ resData.servings }}</p>
+        </div>
+        <div class="p-3 d-flex flex-column align-items-center rounded shadow">
+          <i class="fa-solid fa-fire"></i>
+          <p class="m-0">Calories</p>
+          <p class="m-0">{{ resData.caloriesPerServing }}</p>
+        </div>
+      </div>
+      <div class="timmings-div rounded p-3">
+        <p>Preperation Minutes : - {{ resData.prepTimeMinutes }} Mins</p>
+        <p>Cooking Minutes : - {{ resData.cookTimeMinutes }} Mins</p>
+      </div>
+      <div class="d-flex">
+        <p *ngFor="let i of resData.tags" class="text-primary fw-bold m-0 mt-2">
+          #{{ i }}
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 p-3">
+          <h4>Ingredients</h4>
+          <div *ngFor="let i of resData.ingredients">-> {{ i }}</div>
+        </div>
+        <div class="col-lg-6 col-md-6 p-3">
+          <h4>Preperation</h4>
+          {{ resData.instructions }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
