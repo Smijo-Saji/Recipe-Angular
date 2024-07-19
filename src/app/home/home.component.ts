@@ -7,7 +7,7 @@ import { ApiServiceService } from '../services/api-service.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  selectedCategory: string = 'Choose Category';
+  selectedCategory: string = 'Sort By Meal-Type';
   categories: string[] = [
     'Sort By Meal-Type',
     'Dinner',
