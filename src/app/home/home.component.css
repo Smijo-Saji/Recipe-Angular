@@ -1,3 +1,6 @@
 .search-sec input:focus {
   outline: none;
 }
+.recipies-div p {
+  font-size: 14px;
+}

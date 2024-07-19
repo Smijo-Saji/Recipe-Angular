@@ -8,7 +8,7 @@ export class SortPipe implements PipeTransform {
     if (!items) {
       return [];
     }
-    if (!mealType || mealType === 'Choose Category') {
+    if (!mealType || mealType === 'Sort By Meal-Type') {
       return items;
     }
     return items.filter((item) => item.mealType.includes(mealType));

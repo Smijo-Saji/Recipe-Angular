@@ -9,7 +9,7 @@ import { ApiServiceService } from '../services/api-service.service';
 export class HomeComponent {
   selectedCategory: string = 'Choose Category';
   categories: string[] = [
-    'Choose By Meal-Type',
+    'Sort By Meal-Type',
     'Dinner',
     'Lunch',
     'Snack',
